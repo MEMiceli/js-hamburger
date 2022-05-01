@@ -8,13 +8,20 @@
 // all'evento click su hamburger menu <i class="fas fa-bars"></i> da inspector 
 //  header right ul perde la funzione flex
 
-const HamburgerM = document.getElementById("fa-bars");
+const HamburgerM = document.getElementById("open-menu");
 
-const HamburgerMView = document.getElementsByClassName("header-left");
+// const HamburgerMView = document.getElementsById("hamburgermview");
+const Close = document.getElementById("close-menu")
 
-
-HamburgerMView.addEventListener("click",
+HamburgerM.addEventListener("click",
     function() {
-        windows.alert("funziona!");
+        document.getElementById("hamburgermview").style.display = 'block';  
+        
+}
+);
+Close.addEventListener("click",
+    function() {
+        document.getElementById("hamburgermview").style.display = 'none';  
+        
 }
 );
